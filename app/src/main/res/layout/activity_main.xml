@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.example.kishorebaktha.mongodb.MainActivity">
+
+    <SurfaceView
+        android:id="@+id/cameraview"
+        android:layout_width="match_parent"
+        android:layout_height="500px"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="85dp" />
+    <TextView
+        android:layout_below="@+id/cameraview"
+        android:id="@+id/textview"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        android:text="SCAN  THE QR CODE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textview"
+        android:layout_marginStart="14dp"
+        android:onClick="send"
+        android:background="#f42105"
+        android:text="ADD"
+        android:textColor="#fcfcfc" />
+
+    <!--Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:onClick="detail"
+        android:layout_alignTop="@+id/button2"
+        android:layout_marginStart="12dp"
+        android:text="VIEW DETAILS" /-->
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button2"
+        android:layout_alignBottom="@+id/button2"
+        android:onClick="complaint"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="13dp"
+        android:background="#f42105"
+        android:text="COMPLAINT"
+        android:textColor="#fcfcfc" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button4"
+        android:layout_marginEnd="25dp"
+        android:layout_toStartOf="@+id/button4"
+        android:background="#f42105"
+        android:onClick="locate"
+        android:text="VIEW LOCATION"
+        android:textColor="#fcfcfc" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:background="#f42105"
+        android:onClick="profile"
+        android:text="VIEW YOUR PROFILE"
+        android:textColor="#fcfcfc" />
+
+</RelativeLayout>

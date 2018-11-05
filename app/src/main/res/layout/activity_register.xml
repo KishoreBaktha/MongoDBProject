@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background"
+        tools:context="com.example.kishorebaktha.mongodb.RegisterActivity">
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="180dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:background="#260af7"
+            android:text="Employee name"
+            android:textColor="#fcfcfc"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/empname2"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView11"
+            android:layout_marginStart="71dp"
+            android:layout_marginTop="24dp"
+            android:background="#fcf8f8"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="180dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/empname2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="34dp"
+            android:background="#260af7"
+            android:text="Employee code"
+            android:textColor="#fcfcfc"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/empcode2"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignStart="@+id/desig"
+            android:layout_below="@+id/textView12"
+            android:layout_marginTop="21dp"
+            android:background="#fcf8f8"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/empcode2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="31dp"
+            android:background="#260af7"
+            android:text="Designation"
+            android:textColor="#fcfcfc"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/desig"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignEnd="@+id/empname2"
+            android:layout_below="@+id/textView13"
+            android:layout_marginTop="17dp"
+            android:background="#fcf8f8"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="180dp"
+            android:layout_height="30dp"
+            android:layout_alignStart="@+id/textView12"
+            android:layout_below="@+id/desig"
+            android:layout_marginTop="28dp"
+            android:background="#260af7"
+            android:text="Phone extension"
+            android:textColor="#fcfcfc"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/phoneext"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignStart="@+id/empcode2"
+            android:layout_below="@+id/textView14"
+            android:layout_marginTop="19dp"
+            android:background="#fcf8f8"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_alignEnd="@+id/textView13"
+            android:layout_below="@+id/phoneext"
+            android:layout_marginTop="28dp"
+            android:background="#260af7"
+            android:text="Password"
+            android:textColor="#fcfcfc"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignStart="@+id/empcode2"
+            android:layout_below="@+id/textView15"
+            android:layout_marginTop="19dp"
+            android:background="#fcf8f8"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_alignEnd="@+id/textView13"
+            android:layout_below="@+id/pass"
+            android:layout_marginTop="28dp"
+            android:background="#260af7"
+            android:text="Email"
+            android:textColor="#fcfcfc"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignStart="@+id/empcode2"
+            android:layout_below="@+id/textView16"
+            android:layout_marginTop="19dp"
+            android:background="#fcf8f8"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/email"
+            android:layout_marginTop="37dp"
+            android:onClick="registeremp"
+            android:background="#f42105"
+            android:text="REGISTER"
+            android:textColor="#fcfcfc" />
+    </RelativeLayout>
+</ScrollView>
